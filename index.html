@@ -3,53 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simone Cetronio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #ffffff;
-            padding: 20px;
-        }
-        .container {
-            max-width: 600px;
-            margin: auto;
-            background: rgb(201, 251, 255);
-            padding: 100px;
-            border-radius: 200px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-        }
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
-        .social-links a {
-            display: inline-block;
-            margin: 10px;
-            text-decoration: none;
-            font-size: 20px;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-        }
-        .instagram { background-color: #e1306c; }
-        .github { background-color: #000000; }
-        .linkedin { background-color: #303ce1; }
-    </style>
+    <title>Il Mio Profilo - Cybersecurity</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
-        <h1>Hi, I'm Simone Cetronio</h1>
-        <img src="tuafoto.jpg" alt="La mia foto" class="profile-img">
-        <p>I'm a student at Cyber HackAdemy. My social profiles:
-        </p>
-        <div class="social-links">
-            <a href="https://www.instagram.com/cetronio_simone/" class="instagram" target="_blank">Instagram</a>
-            <a href="https://github.com/simocetro001" class="github" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/simone-cetronio-2b48782a8/" class="linkedin" target="_blank">Linkedin</a>
-        </div>
+        <header>
+            <h1>&lt;/Benvenuto&gt;</h1>
+        </header>
+        
+        <section class="profile">
+            <img src="profile.jpg" alt="La mia foto" class="profile-pic">
+        </section>
+        
+        <section class="about">
+            <h2>Simone Cetronio</h2>
+            <p>I am a student at the Cyber HackAdemy and a computer engineering student at the University of Federico II</p>
+        </section>
+        
+        <section class="social">
+            <h2>Follow me on:</h2>
+            <div class="links">
+                <a href="https://github.com/simocetro001" target="_blank" class="social-link github"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.instagram.com/cetronio_simone/" target="_blank" class="social-link instagram"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.linkedin.com/in/simone-cetronio-2b48782a8/" target="_blank" class="social-link linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </section>
     </div>
 </body>
 </html>
+
+<style>
+    body {
+        background-color: #0d1117;
+        color: #c9d1d9;
+        font-family: 'Courier New', monospace;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+    }
+    h1 {
+        color: #58a6ff;
+    }
+    .subtitle {
+        font-style: italic;
+        color: #8b949e;
+    }
+    .profile {
+        margin: 20px 0;
+    }
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #58a6ff;
+    }
+    .social-link {
+        display: block;
+        margin: 10px;
+        padding: 10px;
+        background-color: #161b22;
+        border-radius: 5px;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    .github:hover { color: #58a6ff; }
+    .instagram:hover { color: #E1306C; }
+    .linkedin:hover { color: #0A66C2; }
+</style>
+
